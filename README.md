@@ -20,6 +20,7 @@ Magnum 由 OpenStack Container Team 開發的 ```container orchestration engines
 
 ## 貢獻
 該專案由我們 OpenStack Containers Team 積極開發。我們每週使用 [IRC](https://wiki.openstack.org/wiki/Meetings/Containers) 進行會議討論，而會議通常由 PTL [Adrian Otto](https://launchpad.net/~aotto) 主持。
+
 	* 我們需要您[貢獻 Magnum](https://wiki.openstack.org/wiki/Magnum/Contributing) !
 
 ## 架構
