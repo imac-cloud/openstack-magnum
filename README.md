@@ -20,7 +20,7 @@ Magnum 由 OpenStack Container Team 開發的 ```container orchestration engines
 
 ## 貢獻
 該專案由我們 OpenStack Containers Team 積極開發。我們每週使用 [IRC](https://wiki.openstack.org/wiki/Meetings/Containers) 進行會議討論，而會議通常由 PTL [Adrian Otto](https://launchpad.net/~aotto) 主持。
-	* 我們需要您[貢獻 Magnum](https://wiki.openstack.org/wiki/Magnum/Contributing)!
+	* 我們需要您[貢獻 Magnum](https://wiki.openstack.org/wiki/Magnum/Contributing) !
 
 ## 架構
 ![magnum_architecture](./images/Magnum_architecture.png)
@@ -37,7 +37,7 @@ Bay Create/Update/Delete
 * Code Reviews
 	* [Gerrit Reviews](https://review.openstack.org/#/q/status:open+magnum,n,z)
 * Code Repository
-	* git clone [git://git.openstack.org/openstack/magnum](git://git.openstack.org/openstack/magnum)
+	* git clone \[git://git.openstack.org/openstack/magnum\](git://git.openstack.org/openstack/magnum)
 * Specification
 	* [Containers Service Spec](https://review.openstack.org/136103)
 	* [Container Networking Model Spec](https://review.openstack.org/204686/)
@@ -61,7 +61,7 @@ Bay Create/Update/Delete
 Magnum 提供一個專用的 API 來管理應用程式的容器(containers)，而其中與 Nova(machine) instance 最大的差異是生命週期與操作。實際上我們使用 Nova instances 來執行我們應用程式的容器(containers)。
 
 ### 2) Magnum 與 Docker 和 Kubernetes 之間的不同？
-Magnum 提供一個非同步的 API 且與 Keystone 兼容以及完整的多租戶(multi-tenancy)實現。
+Magnum 提供一個非同步的 API 且與 Keystone 兼容以及完整的多租戶(multi-tenancy)實現。它並不會對內部執行編配(orchestration)，而需依賴於 OpenStack Orchestration，
 
 ### 3) 這與 Nova-Docker 相同嗎？
 
