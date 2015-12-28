@@ -37,7 +37,7 @@ Bay Create/Update/Delete
 * Code Reviews
 	* [Gerrit Reviews](https://review.openstack.org/#/q/status:open+magnum,n,z)
 * Code Repository
-	* git clone \[git://git.openstack.org/openstack/magnum\](git://git.openstack.org/openstack/magnum)
+	* git clone git://git.openstack.org/openstack/magnum
 * Specification
 	* [Containers Service Spec](https://review.openstack.org/136103)
 	* [Container Networking Model Spec](https://review.openstack.org/204686/)
@@ -57,17 +57,17 @@ Bay Create/Update/Delete
 * [2014 Containers 會議存檔](http://eavesdrop.openstack.org/meetings/containers/2014/)
 
 ## 常見問題
-### 1) Magnum 與 Nova 之間的差異？
+#### 1) Magnum 與 Nova 之間的差異？
 Magnum 提供一個專用的 API 來管理應用程式的容器(containers)，而其中與 Nova(machine) instance 最大的差異是生命週期與操作。實際上我們使用 Nova instances 來執行我們應用程式的容器(containers)。
 
-### 2) Magnum 與 Docker 和 Kubernetes 之間的不同？
+#### 2) Magnum 與 Docker 和 Kubernetes 之間的不同？
 Magnum 提供一個非同步的 API 且與 Keystone 兼容以及完整的多租戶(multi-tenancy)實現。它並不會對內部執行編配(orchestration)，而需依賴於 OpenStack Orchestration，
 
-### 3) 這與 Nova-Docker 相同嗎？
+#### 3) 這與 Nova-Docker 相同嗎？
 
-### 4) 什麼是 Magnum？
+#### 4) 什麼是 Magnum？
 
-### 5) 若我使用 Heat 中的 Docker resource 是否會得到相同的事情？
+#### 5) 若我使用 Heat 中的 Docker resource 是否會得到相同的事情？
 
-### 6) 在 Magnum 中，何謂 multi-tenancy(是 Magnum 安全性)?
+#### 6) 在 Magnum 中，何謂 multi-tenancy(是 Magnum 安全性)?
 
