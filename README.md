@@ -20,8 +20,7 @@ Magnum 由 OpenStack Container Team 開發的 ```container orchestration engines
 
 ## 貢獻
 該專案由我們 OpenStack Containers Team 積極開發。我們每週使用 [IRC](https://wiki.openstack.org/wiki/Meetings/Containers) 進行會議討論，而會議通常由 PTL [Adrian Otto](https://launchpad.net/~aotto) 主持。
-
-	* 我們需要您[貢獻 Magnum](https://wiki.openstack.org/wiki/Magnum/Contributing) !
+* 我們需要您[貢獻 Magnum](https://wiki.openstack.org/wiki/Magnum/Contributing) !
 
 ## 架構
 ![magnum_architecture](./images/Magnum_architecture.png)
@@ -68,8 +67,10 @@ Magnum 提供一個非同步的 API 且與 Keystone 兼容以及完整的多租�
 並不相同，對於 Nova 來說 Nova-Docker 是一個 virt driver，允許容器(containers)建立如同 Nova instances，若您想將你的容器(containers)視為輕量級虛擬機，這種情況下 Nova-Docker 是非常適合的。Magnum 提供了一些超出 Nova API 能處理範圍的容器特定功能並實現了自己的 API，而表面上這些特徵在某種程度上是與其他 OpenStack 服務一致。使用 Magnum 啟動的容器(containers)是透過 Heat 執行在 Nova instance 之上。
 
 #### 4) 什麼是 Magnum？
+Magnum 為 OpenStack 雲端營運商(公有或私有)提供容器(containers)主機代管服務給雲端使用者的解決方案。Magnum 簡化與 OpenStack 整合需求，並允許雲端使用者可以啟動雲端資源，像是 Nova instances、Cinder Volumes、Trove Databases 等，也可以建立應用程式在容器(containers)之中，提供超越現有雲端資源的高級功能的範圍。用於建立 IaaS 資源的身份驗證也可用於 Magnum 來建立容器化(containerized)的應用程式。Some examples of advanced features available with Magnum are the ability to scale an application to a specified number of instances, to cause your application to automatically re-spawn an instance in the event of a failure, and to pack applications together more tightly than would be possible using Virtual Machines.
 
 #### 5) 若我使用 Heat 中的 Docker resource 是否會得到相同的事情？
+並不相同，Docker Heat resource 並不提供資源調度或者容器技術使用的選擇，它是專門針對 Docker 且使用 Glance 來儲存容器映像檔(container images)，它目前不允許分層的映像檔的特點，相較於分層的映像檔基於本地快取的映像檔，這可能導致需要較長的時間啟動容器(containers)。Magnum 充分利用 Docker 速度上的好處。
 
 #### 6) 在 Magnum 中，何謂 multi-tenancy(是 Magnum 安全性)?
 
