@@ -1,6 +1,9 @@
 # Magnum
 
-Magnum 由 OpenStack Container Team 開發的 ```container orchestration engines```，像是 Docker 和 Kubernetes 可作為 OpenStack 上第一類資源開發的 OpenStack API 服務。Magnum 使用 Heat 來編配(orchestrate) OS 映像檔(image)，其中包含 Docker 和 Kubernetes，並依照叢集配置執行在任何的虛擬機或裸機(bare metal)中。以下為5分鐘的 Magnum Demo 影片。
+> 原文網址：[OpenStack Magnum Wiki](https://wiki.openstack.org/wiki/Magnum)
+
+
+Magnum 由 OpenStack Container Team 開發的 container orchestration engines，像是 Docker 和 Kubernetes 可作為 OpenStack 上第一類資源開發的 OpenStack API 服務。Magnum 使用 Heat 來編配(orchestrate) OS 映像檔(image)，其中包含 Docker 和 Kubernetes，並依照叢集配置執行在任何的虛擬機或裸機(bare metal)中。以下為5分鐘的 Magnum Demo 影片。
 [![demo_preview_frame](./images/Demo-Preview-Frame.png)](https://vimeo.com/128538940)
 
 ## 最新消息
